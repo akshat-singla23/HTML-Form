@@ -1,0 +1,81 @@
+body {
+    background-image: url('backgrounds.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 43%;
+    border: 1px solid black;
+}
+
+.exp{
+    margin-left: 31%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.2%;
+    margin-top: 0.6%;
+}
+
+.form{
+    display: block;.
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+    border-radius: 7px;
+    margin-left: 8%;
+    margin-top: 4.3%;
+    margin-right: 8%;
+    text-align: center;
+}
+
+.button{
+    width: 45%;
+    height: 45px;
+    border: 2px solid #a6bfec;
+    background: #adabed;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+label{
+    width: 550px;
+    text-align: end;
+    display: inline-block;
+}
+
+.button:hover{
+    color: #a4c0ec;
+    background: white;
+}
+
+.field{
+    height: 35px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}

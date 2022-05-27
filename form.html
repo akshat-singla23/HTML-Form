@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Everlytics Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = form>
+        <form>
+            <label for="source" class = "text">Select Your Source :</label>
+            <select name="source" class = "dropdown">
+                <option value="Googe Cloud Storage" class = ".dropdown-content">Googe Cloud Storage</option>
+            </select><br><br>
+            <label for="pname" class = "text">Provide a name for pipeline :</label>
+            <input type="text" name="pname" placeholder="e.g., cust_shop_energy_gateway001" minlength="5" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br><br>
+            <label for="GCSPname" class = "text">GCS project name :</label>
+            <input type="text" name="pname" placeholder="project-id" minlength="5" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br><br>
+            <label for="bname" class = "text">GCS bucket name :</label>
+            <input type="text" name="bname" placeholder="gs://your-bucket" minlength="5" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br><br>
+            <label for="files" class = "text">Input Cloud Storage File(s) :</label>
+            <input type="text" name="files" placeholder="GCS location of your files" minlength="5" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br><br>
+            <label for="files" class = "text">Input Cloud Storage File(s) :</label>
+            <input type="text" name="files" placeholder="GCS location of your files" minlength="5" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br>
+            <p class = "exp">Example: gs://your-bucket/your-files/01.csv</p><br>
+            <label for="credentials" class = "text">GCS credentials :</label>
+            <input type="text" name="credentials" minlength="5" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br><br>
+            <label for="timer" class = "text">Run Every :</label>
+            <input type="number" name="timer" placeholder="(in minutes)" minlength="5" min="0" class = "field" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57));"><br><br>
+            <input type="submit" value="Create" class = "button">
+            <input type="reset" value="Cancel" class = "button">
+        </form>
+    </div>
+</body>
+</html>
